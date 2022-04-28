@@ -1,0 +1,31 @@
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/4
+
+
+###
+POST  http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "Username": "Riyan Putra F",
+    "Password": "ri4556",
+    "Email": "riyan@gmail.com",
+    "Role": "Student"
+}
+
+###
+PATCH http://localhost:5000/products/4
+Content-Type: application/json
+
+{
+    "Username": "Riyan Terbaru",
+    "Password": "riyan567",
+    "Email": "riyan@gmail.com",
+    "Role": "Student"
+}
+
+
+###
+DELETE  http://localhost:5000/products/4
